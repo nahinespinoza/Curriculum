@@ -13,8 +13,7 @@
         content="Currículum Vitae de Nombre Apellido. Información sobre experiencia laboral, educación y habilidades.">
     <meta name="author" content="Nombre Apellido">
     <link rel="stylesheet" href="stylesheet/style.css">
-     <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 
     <title>Currículum Vitae de Nombre Apellido</title>
 </head>
@@ -41,7 +40,8 @@
             <p>Visita mi portafoleo <a href="https://nahinespinoza.github.io/nahinespinoza/" target="_blank"> aqui </a>
                 para más información.</p>
 
-            <img id="photo" src="https://i.pinimg.com/originals/f9/6e/7d/f96e7d2ca7accfb8b6185859afee09b3.gif" alt="Foto de perfil" width="300" height="300">
+            <img id="photo" src="https://i.pinimg.com/originals/f9/6e/7d/f96e7d2ca7accfb8b6185859afee09b3.gif"
+                alt="Foto de perfil" width="300" height="300">
 
         </section>
 
@@ -53,41 +53,35 @@
                 <li>Trabajo 3</li>
             </ol>
             <section id="referencias">
-                <h2 class="subtitle">Referencias</h2>
+                <h2>Referencias</h2>
 
-                <!-- No usar strong, si no <spam>, y no usar <br>  -->
-                <!-- Testimonio 1 -->
-                <div class="testimonio">
+                <article class="testimonio">
                     <p>"Su trabajo siempre fue de alta calidad, mostró gran dedicación y pasión en todo momento."</p>
                     <p><span>Juan Pérez</span>, Gerente de Desarrollo</p>
                     <p>Juan trabajó conmigo en el proyecto de desarrollo de software para su empresa durante más de 6
                         meses. Destaco su capacidad para resolver problemas complejos y su habilidad para trabajar en
                         equipo.</p>
-                    <br>
-                </div>
+                </article>
 
-                <!-- Testimonio 2 -->
-                <div class="testimonio">
+                <article class="testimonio">
                     <p>"Es una persona extremadamente confiable, con habilidades excepcionales en diseño gráfico y
                         UX/UI."</p>
                     <p><span>Ana González</span>, Directora de Marketing</p>
                     <p>Colaboramos durante la creación de una nueva plataforma digital para el lanzamiento de productos.
                         Su trabajo en la interfaz de usuario mejoró significativamente la experiencia de nuestros
                         usuarios.</p>
-                </div>
-                <br>
+                </article>
 
-                <!-- Testimonio 3 -->
-                <div class="testimonio">
+                <article class="testimonio">
                     <p>"Un profesional comprometido, siempre dispuesto a aprender y aportar ideas innovadoras."</p>
                     <p><span>Carlos Rodríguez</span>, Líder de Proyectos</p>
                     <p>Trabajé con Carlos en varios proyectos de desarrollo web y su capacidad para adaptarse a nuevas
                         tecnologías siempre fue impresionante. Su enfoque creativo hizo que los proyectos fueran siempre
                         más efectivos.</p>
-                </div>
-                <br>
+                </article>
 
             </section>
+
 
         </section>
 
@@ -188,74 +182,51 @@
     </main>
 
     <footer>
-        
-        <section id="formulario">
-            <h2 class="subtitle">Formulario de Contacto</h2>
 
-            <form action="#" method="post">
+        <form action="#" method="post">
 
-                <!-- Campo de texto de una línea (Nombre) -->
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-                <!-- Lista desplegable (País) -->
-                <fieldset>
-                    <legend>Motivo de contacto</legend>
-                    <label for="motivo">Selecciona una opción:</label>
-                    <select id="motivo" name="motivo" required>
-                        <option value="">Selecciona el motivo</option>
-                        <option value="empleo">Oferta de empleo</option>
-                        <option value="colaboracion">Colaboración profesional</option>
-                        <option value="consultoria">Consultoría</option>
-                        <option value="otra">Otro</option>
-                    </select>
-                </fieldset>
+            <fieldset>
+                <legend>Motivo de contacto</legend>
+                <label for="motivo">Selecciona una opción:</label>
+                <select id="motivo" name="motivo" required>
+                    <option value="">Selecciona el motivo</option>
+                    <option value="empleo">Oferta de empleo</option>
+                    <option value="colaboracion">Colaboración profesional</option>
+                    <option value="consultoria">Consultoría</option>
+                    <option value="otra">Otro</option>
+                </select>
+            </fieldset>
 
-                <!-- Si tienen el mismo name se puede hacer doble seleccion -->
-                <div>
-                    <label>Género:</label>
-                    <label for="masculino">
-                        <input type="radio" id="masculino" name="genero" value="masculino" required> Masculino
-                    </label>
-                    <label for="femenino">
-                        <input type="radio" id="femenino" name="genero" value="femenino" required> Femenino
-                    </label>
-                    <label for="otro">
-                        <input type="radio" id="otro" name="genero" value="otro" required> Otro
-                    </label>
-                </div>
+            <label>Género:</label>
+            <label for="masculino">
+                <input type="radio" id="masculino" name="genero" value="masculino" required> Masculino
+            </label>
+            <label for="femenino">
+                <input type="radio" id="femenino" name="genero" value="femenino" required> Femenino
+            </label>
+            <label for="otro">
+                <input type="radio" id="otro" name="genero" value="otro" required> Otro
+            </label>
 
-                <!-- Vector de valores (Intereses - checkboxes) -->
-                <div>
-                    <label>Intereses:</label>
-                    <label for="programacion">
-                        <input type="checkbox" id="programacion" name="intereses" value="programacion" required>
-                        Programación
-                    </label>
-                    <label for="analisis">
-                        <input type="checkbox" id="analisis" name="intereses" value="analisis" required> Análisis de
-                        Datos
-                    </label>
-                    <label for="redes">
-                        <input type="checkbox" id="redes" name="intereses" value="marketing" required> Redes
-                    </label>
-                </div>
+            <label>Intereses:</label>
+            <label for="programacion">
+                <input type="checkbox" id="programacion" name="intereses" value="programacion" required> Programación
+            </label>
+            <label for="analisis">
+                <input type="checkbox" id="analisis" name="intereses" value="analisis" required> Análisis de Datos
+            </label>
+            <label for="redes">
+                <input type="checkbox" id="redes" name="intereses" value="marketing" required> Redes
+            </label>
 
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                <!-- Área de texto (Mensaje) -->
-                <div>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                </div>
-
-                <!-- El type de ser de tipo submit para poder enviar la inforación al servidor, si se puede cambiar de tipo  -->
-                <div>
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
+            <button type="submit">Enviar</button>
+        </form>
 
     </footer>
 </body>
